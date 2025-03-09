@@ -4,46 +4,46 @@ import { Cloud, Dog, Film } from 'lucide-react';
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex flex-col justify-center items-center text-white px-6">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-6">
       <div className="text-center mb-12">
-        <h1 className="text-5xl font-extrabold mb-4 text-white drop-shadow-md">Explore APIs</h1>
-        <p className="text-lg text-gray-300 max-w-lg mx-auto">
-          Discover powerful APIs with interactive search, filtering, and pagination features.
+        <h1 className="text-6xl font-extrabold text-white drop-shadow-lg">Discover APIs</h1>
+        <p className="text-xl text-gray-200 max-w-xl mx-auto mt-4">
+          Unlock powerful APIs with interactive search, filtering, and pagination features.
         </p>
       </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
+      
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-6xl">
         <Link 
           to="/weather" 
-          className="group bg-gray-700 hover:bg-gray-600 rounded-2xl shadow-lg transition-all transform hover:scale-105 p-6 flex flex-col items-center text-center"
+          className="group relative bg-white/20 backdrop-blur-lg shadow-xl rounded-3xl overflow-hidden transform hover:scale-105 transition-all p-8 flex flex-col items-center text-center"
         >
-          <div className="bg-blue-500 p-4 rounded-full mb-4 transition-all group-hover:rotate-12">
-            <Cloud className="h-12 w-12 text-white" />
+          <div className="bg-blue-500 p-5 rounded-full mb-6 group-hover:rotate-12 transition-all">
+            <Cloud className="h-14 w-14 text-white" />
           </div>
-          <h2 className="text-2xl font-semibold mb-2">Weather API</h2>
-          <p className="text-gray-300">Get real-time weather data with ease.</p>
-        </Link>
-
-        <Link 
-          to="/dogs" 
-          className="group bg-gray-700 hover:bg-gray-600 rounded-2xl shadow-lg transition-all transform hover:scale-105 p-6 flex flex-col items-center text-center"
-        >
-          <div className="bg-yellow-500 p-4 rounded-full mb-4 transition-all group-hover:rotate-12">
-            <Dog className="h-12 w-12 text-white" />
-          </div>
-          <h2 className="text-2xl font-semibold mb-2">Dog API</h2>
-          <p className="text-gray-300">Browse high-quality dog images by breed.</p>
+          <h2 className="text-3xl font-semibold text-white">Weather API</h2>
+          <p className="text-gray-200 mt-2">Real-time weather updates.</p>
         </Link>
 
         <Link 
           to="/movies" 
-          className="group bg-gray-700 hover:bg-gray-600 rounded-2xl shadow-lg transition-all transform hover:scale-105 p-6 flex flex-col items-center text-center"
+          className="group relative bg-white/20 backdrop-blur-lg shadow-xl rounded-3xl overflow-hidden transform hover:scale-105 transition-all p-8 flex flex-col items-center text-center"
         >
-          <div className="bg-red-500 p-4 rounded-full mb-4 transition-all group-hover:rotate-12">
-            <Film className="h-12 w-12 text-white" />
+          <div className="bg-red-500 p-5 rounded-full mb-6 group-hover:rotate-12 transition-all">
+            <Film className="h-14 w-14 text-white" />
           </div>
-          <h2 className="text-2xl font-semibold mb-2">Movie API</h2>
-          <p className="text-gray-300">Search for movies with advanced filtering.</p>
+          <h2 className="text-3xl font-semibold text-white">Movie API</h2>
+          <p className="text-gray-200 mt-2">Find and filter movies.</p>
+        </Link>
+
+        <Link 
+          to="/dogs" 
+          className="group relative bg-white/20 backdrop-blur-lg shadow-xl rounded-3xl overflow-hidden transform hover:scale-105 transition-all p-8 flex flex-col items-center text-center"
+        >
+          <div className="bg-yellow-500 p-5 rounded-full mb-6 group-hover:rotate-12 transition-all">
+            <Dog className="h-14 w-14 text-white" />
+          </div>
+          <h2 className="text-3xl font-semibold text-white">Dog API</h2>
+          <p className="text-gray-200 mt-2">Browse dog images.</p>
         </Link>
       </div>
     </div>

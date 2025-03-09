@@ -26,6 +26,7 @@ const DogPage = () => {
     totalPages,
   } = useSelector((state) => state.dog);
 
+
   useEffect(() => {
     dispatch(fetchBreeds());
   }, [dispatch]);

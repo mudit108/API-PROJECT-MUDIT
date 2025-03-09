@@ -11,18 +11,6 @@ const Navbar = () => {
         </NavLink>
         <div className="flex space-x-6">
           <NavLink 
-            to="/" 
-            className={({ isActive }) => 
-              `flex items-center px-4 py-2 rounded-lg text-lg font-medium transition-all duration-300 ${
-                isActive 
-                  ? 'bg-red-500 text-white shadow-lg scale-105' 
-                  : 'text-gray-300 hover:bg-gray-800 hover:text-white'
-              }`
-            }
-          >
-            <Home className="mr-2 h-5 w-5" /> Home
-          </NavLink>
-          <NavLink 
             to="/weather" 
             className={({ isActive }) => 
               `flex items-center px-4 py-2 rounded-lg text-lg font-medium transition-all duration-300 ${
@@ -33,18 +21,6 @@ const Navbar = () => {
             }
           >
             <Cloud className="mr-2 h-5 w-5" /> Weather
-          </NavLink>
-          <NavLink 
-            to="/dogs" 
-            className={({ isActive }) => 
-              `flex items-center px-4 py-2 rounded-lg text-lg font-medium transition-all duration-300 ${
-                isActive 
-                  ? 'bg-yellow-500 text-white shadow-lg scale-105' 
-                  : 'text-gray-300 hover:bg-gray-800 hover:text-white'
-              }`
-            }
-          >
-            <Dog className="mr-2 h-5 w-5" /> Dogs
           </NavLink>
           <NavLink 
             to="/movies" 
@@ -58,6 +34,19 @@ const Navbar = () => {
           >
             <Film className="mr-2 h-5 w-5" /> Movies
           </NavLink> 
+          <NavLink 
+            to="/dogs" 
+            className={({ isActive }) => 
+              `flex items-center px-4 py-2 rounded-lg text-lg font-medium transition-all duration-300 ${
+                isActive 
+                  ? 'bg-yellow-500 text-white shadow-lg scale-105' 
+                  : 'text-gray-300 hover:bg-gray-800 hover:text-white'
+              }`
+            }
+          >
+            <Dog className="mr-2 h-5 w-5" /> Dogs
+          </NavLink>
+          
         </div>
       </div>
     </nav>
